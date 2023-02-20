@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 図挿入のためのテンプレート
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PNG, JPG 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[keepaspectratio, width=1.0\linewidth]{figures/images/ECM.jpg}
+    \caption{PNGの概略図}
+    \label{fig:PNG}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SVG
+
+\begin{figure}[t]
+    \centering
+    \includesvg[width=1.0\linewidth]{FilePath}
+    \caption{SVGの概略図}
+    \label{fig:SVG} 
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 二段組にする場合
+
+\begin{figure}[t]
+    \centering
+    \begin{subfigure}[ht]{0.45\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.9\linewidth]{FilePath}
+        \caption{説明書の表}
+        \label{fig:manu_f}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[ht]{0.45\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, width=0.9\linewidth]{FilePath}
+        \caption{説明書の裏}
+        \label{fig:manu_b}
+    \end{subfigure}
+    \caption{二段組}
+    \label{fig:2-COLUMN}
+\end{figure}

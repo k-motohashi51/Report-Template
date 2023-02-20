@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 表挿入のためのテンプレート
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% デフォルト
+
+\begin{table}[ht]
+    \caption{表の挿入}
+    \label{table:TABLE1}
+    \centering
+    \vspace{-0.3\baselineskip}
+    \begin{tabular}{c|c|c}
+        \hline
+        変数 & 予想 & 結果 \\
+        \hline \hline
+        $x_{01}$ & 2.11 & 2.38 \\
+        $x_{02}$ & 1.84 & 1.41 \\
+        $x_{03}$ & 3.22 & 1.34 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% セル内で改行 
+
+\begin{table}[ht]
+    \caption{セル内で改行する場合}
+    \label{table:TABLE2}
+    \centering
+    \vspace{-0.3\baselineskip}
+    \begin{tabular}{c|c|c}
+        \hline
+        \begin{tabular}{c}説明\\変数\\\end{tabular} &
+        \begin{tabular}{c}標準偏差\\\([mm]\)\\\end{tabular} &
+        \begin{tabular}{c}誤差\\\([mm]\)\\\end{tabular} \\
+        \hline \hline
+        $x_{01}$ & 2.81 & 0.01 \\
+        $x_{02}$ & 2.20 & 0.11 \\
+        $x_{03}$ & 1.45 & 0.45 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% セルを結合
+
+\begin{table}[ht]
+    \caption{セルを結合}
+    \label{table:TABLE3}
+    \centering
+    \vspace{-0.3\baselineskip}
+    \begin{tabular}{c|rr|rr}
+        \hline
+        &
+        \multicolumn{2}{|c}{回帰係数} &
+        \multicolumn{2}{|c}{$p$値} \\
+        \hline
+        & 1回目 & 2回目 & 1回目 & 2回目 \\
+        \hline \hline
+        $\alpha_{01}$ & 0.51 & 0.48 & 0.01 & 0.31 \\
+        $\alpha_{02}$ & 0.32 & 0.22 & 0.02 & 0.47 \\
+        $\alpha_{03}$ & 0.44 & 0.11 & 0.09 & 0.42 \\
+        \hline
+    \end{tabular}
+\end{table}

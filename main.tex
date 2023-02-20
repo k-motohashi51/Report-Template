@@ -1,0 +1,50 @@
+\documentclass[11pt, a4j, dvipdfmx]{jsarticle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% マクロの定義
+
+% 名前
+\newcommand{\AUTHOR}{XX XX}
+
+% 所属
+\newcommand{\UNIVERSITY}{XX大学}
+\newcommand{\FACULTY}{XX学部}
+\newcommand{\DEPARTMENT}{XX学科}
+\newcommand{\GRADE}{X年}
+\newcommand{\ID}{XX\;--\;XXX}
+
+% 講義
+\newcommand{\LECTURE}{XXXX概論}
+\newcommand{\TEACHER}{XX XX 教授}
+
+% レポートのタイトル
+\newcommand{\TITLE}{XXXX XXXX について}
+
+% 提出日
+\newcommand{\SUBMIT}{\today}    %  提出日
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% プリアンブル (パッケージや設定など)
+
+\input{config/preamble.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 本文
+
+\begin{document}
+
+    % 表紙と目次
+    \input{config/cover.tex}
+    \input{config/toc.tex}
+
+    % 内容    
+    \input{contents/c1_intro.tex}
+    \input{contents/c2_body.tex}
+    \input{contents/c3_concl.tex}
+    \input{contents/c4_ref.tex}
+    \input{contents/c5_appx.tex}
+    
+\end{document}

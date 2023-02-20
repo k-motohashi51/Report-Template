@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 数式挿入のためのテンプレート
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% デフォルト
+
+\begin{equation}
+    y = \sum_{k = 1}^{N}{\alpha_{k}x_{k}}
+    \label{formula:mre}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 連立方程式など
+
+\begin{equation}
+    S(k) = 
+    \begin{cases}
+        \exp(\frac{-j \pi k^2}{N}) & \quad (0 \leq k \leq \frac{N}{2}) \\
+        S^{*}(N-k) & \quad (\frac{N}{2} < k < N)
+    \end{cases}
+    \label{formula:ss}
+\end{equation}

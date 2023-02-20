@@ -1,0 +1,26 @@
+\section{序論}
+    \LaTeX で美しくレポートを書くコツは，以下のようになります~\cite{lit:JOURNAL}．
+    %
+    教授にアドバイスされました．
+
+    \begin{quote}
+        \begin{itemize}
+            \item 一文ずつ，\% で区切る．
+            \item 段落を分けるときは，空行を挿入．
+            \item \textbackslash cite や\textbackslash ref の前にはチルダ「\verb|~|」を挿入．
+            \item 文字列の間に数式が入る場合，\$ 数式 \$ の前後に空白を挿入．
+            \item 「[単位]」の前後に空白を挿入．
+            \item アルファベットの次に日本語が続く場合，前後に空白を挿入．
+        \end{itemize}
+    \end{quote}
+
+    \noindent
+    表は，以下の表~\ref{table:TABLE1}，表~\ref{table:TABLE2}，表~\ref{table:TABLE3} のように挿入します．
+    %
+    csv 形式から変換するパッケージもしくは WEB ツール\footnote{csv2tabular「https://rra.yahansugi.com/scriptapplet/csv2tabular/」など}があるので，それを利用するのもいいかもしれません．
+
+    \input{tables/template.tex}
+
+    また，数式は以下の式(\ref{formula:mre})(\ref{formula:ss})のように挿入します．
+
+    \input{formulas/template.tex}

@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% プリアンブルの設定
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% パッケージ一覧
+\input{config/pkgs.tex}
+
+
+% ヘッダのの設定
+\setlength{\headheight}{21pt}   % Warning対策
+\pagestyle{fancy}
+\fancyhead[L]{\footnotesize\LECTURE\quad\TITLE\\\UNIVERSITY~\FACULTY~\DEPARTMENT\quad\AUTHOR}
+\fancyhead[R]{\footnotesize\SUBMIT}
+
+
+% キャプションを英語から日本語に変更
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+\renewcommand{\lstlistingname}{リスト}
+
+
+% リスト挿入の設定
+\lstset{
+    basicstyle={\ttfamily},
+    identifierstyle={\small},
+    commentstyle={\smallitshape},
+    keywordstyle={\small\bfseries},
+    ndkeywordstyle={\small},
+    stringstyle={\small\ttfamily},
+    frame={tb},
+    breaklines=true,
+    columns=[l]{fullflexible},
+    numbers=left,   % 行番号の位置 
+    xrightmargin=2zw,   % 右の余白
+    xleftmargin=2zw,    % 左の余白
+    numberstyle={\scriptsize},
+    stepnumber=1,   % 行番号のステップ
+    numbersep=1zw,  % 行番号からコードまでの距離
+    lineskip=-0.8ex % 行間
+}
